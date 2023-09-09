@@ -1,11 +1,16 @@
-Name = input("student: ")
-Science = input("Science: ")
-Math = input("Math: ")
-English = input ("English: ")
-total = float(Science) + float(Math) + float(English)
+Name = input("Name of student: ")
+Science = input("Grade in Science: ")
+Math = input("Grade in Math: ")
+English = input ("Grade in English: ")
+total = float(Science) + float (Math) + float(English)
 Average = float(total) /3
+print(Name)
+print(Science)
+print(Math)
+print(English)
 print(Average)
-if Average <75:
+
+if Average < 75:
     print("U failed!")
-if Average >75:
+if Average > 75:
     print("Congratulation! You passed")
