@@ -1,4 +1,3 @@
-print ()
 records = {}
 
 while True:
