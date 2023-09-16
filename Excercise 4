@@ -1,0 +1,26 @@
+print ()
+records = {}
+
+while True:
+    choice = input('Enter "add" to add data, "delete" to delete data, or "end" to exit: ')
+
+    if choice == 'add':
+        key = input('Enter key: ')
+        value = input('Enter value: ')
+        records[key] = value
+        print(f'Added: {key}: {value}')
+
+    elif choice == 'delete':
+        key = input('Enter key to delete: ')
+        if key in records:
+            del records[key]
+            print(f'Deleted: {key}')
+        else:
+            print('Key not found in records.')
+
+    elif choice == 'end':
+        break
+    else:
+        print('Invalid choice. Please enter "add", "delete", or "end".')
+
+print('Final records:', records)
